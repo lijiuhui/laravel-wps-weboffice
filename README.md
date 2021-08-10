@@ -1,5 +1,6 @@
 # WPS Web Office
 
+## 感谢原作者付出  Eeitxy
 ## 快速开始
 1. 引入扩展包
 ```

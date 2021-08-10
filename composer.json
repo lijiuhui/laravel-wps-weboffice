@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "lijiuhui\\WebOffice\\": "src/"
+            "Lijiuhui\\WebOffice\\": "src/"
         }
     },
     "extra": {

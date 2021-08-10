@@ -1,11 +1,10 @@
 <?php
 
-use Lijiuhui\Rbac\Models\Permission;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateWebOfficeResourceTable extends Migration
+class CreateWebOfficeResourceVersionsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,7 +13,7 @@ class CreateWebOfficeResourceTable extends Migration
      */
     public function up()
     {
-        Schema::create('web_office_resources', function (Blueprint $table) {
+        Schema::create('web_office_resource_versions', function (Blueprint $table) {
             $table->integer('version')->default(0)->comment('文件版本号');
             $table->integer('resource_id');
             $table->string('name');
@@ -34,6 +33,6 @@ class CreateWebOfficeResourceTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('rbac_permissions');
+        Schema::dropIfExists('web_office_resource_versions');
     }
 }

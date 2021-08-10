@@ -1,9 +1,11 @@
 # WPS Web Office
 
+## 感谢原作者eiixy
+
 ## 快速开始
 1. 引入扩展包
 ```
-composer require eiixy/web-office
+composer require lijiuhui/web-office
 ```
 
 2. 发布配置，注册服务

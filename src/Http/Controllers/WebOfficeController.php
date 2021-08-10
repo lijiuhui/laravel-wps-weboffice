@@ -1,12 +1,12 @@
 <?php
 
 
-namespace Eiixy\WebOffice\Http\Controllers;
+namespace Lijiuhui\WebOffice\Http\Controllers;
 
 
-use Eiixy\WebOffice\Exceptions\WebOfficeException;
-use Eiixy\WebOffice\WebOffice;
-use Eiixy\WebOffice\WebOfficeInterface;
+use Lijiuhui\WebOffice\Exceptions\WebOfficeException;
+use Lijiuhui\WebOffice\WebOffice;
+use Lijiuhui\WebOffice\WebOfficeInterface;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

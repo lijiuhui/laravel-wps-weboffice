@@ -3,8 +3,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "eiixy",
-            "email": "990656271@qq.com"
+            "name": "Lijiuhui",
+            "email": "toolive@yeah.net"
         }
     ],
     "require": {
@@ -13,13 +13,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Eiixy\\WebOffice\\": "src/"
+            "lijiuhui\\WebOffice\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Eiixy\\WebOffice\\Providers\\WebOfficeServiceProvider"
+                "Lijiuhui\\WebOffice\\Providers\\WebOfficeServiceProvider"
             ]
         }
     }

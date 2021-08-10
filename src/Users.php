@@ -1,6 +1,6 @@
 <?php
 
-namespace Eiixy\WebOffice;
+namespace Lijiuhui\WebOffice;
 
 use Illuminate\Support\Collection;
 

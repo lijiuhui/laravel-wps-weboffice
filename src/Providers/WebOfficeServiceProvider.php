@@ -1,8 +1,8 @@
 <?php
 
-namespace Eiixy\WebOffice\Providers;
+namespace Lijiuhui\WebOffice\Providers;
 
-use Eiixy\WebOffice\WebOfficeInterface;
+use Lijiuhui\WebOffice\WebOfficeInterface;
 use Illuminate\Support\ServiceProvider;
 
 

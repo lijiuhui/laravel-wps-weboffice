@@ -1,7 +1,7 @@
 <?php
 
 // wps 回调接口
-Route::group(['prefix' => 'v1/3rd', 'namespace' => 'Eiixy\WebOffice\Http\Controllers'], function () {
+Route::group(['prefix' => 'v1/3rd', 'namespace' => 'Lijiuhui\WebOffice\Http\Controllers'], function () {
     Route::get('file/info', 'WebOfficeController@fileInfo');                // 获取文件元数据
     Route::post('user/info', 'WebOfficeController@userInfo');               // 获取用户信息
     Route::post('file/save', 'WebOfficeController@save');                   // 上传文件新版本

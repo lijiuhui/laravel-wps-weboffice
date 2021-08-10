@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Eiixy\WebOffice\Services;
+namespace Lijiuhui\WebOffice\Services;
 
 
 class WebOfficeService extends WebOfficeHandlerService

@@ -1,15 +1,15 @@
 <?php
 
-namespace Eiixy\WebOffice\Services;
+namespace Lijiuhui\WebOffice\Services;
 
 use Doctrine\DBAL\Schema\Schema;
-use Eiixy\WebOffice\Exceptions\WebOfficeException;
-use Eiixy\WebOffice\File;
-use Eiixy\WebOffice\Files;
-use Eiixy\WebOffice\User;
-use Eiixy\WebOffice\Users;
-use Eiixy\WebOffice\WebOffice;
-use Eiixy\WebOffice\WebOfficeInterface;
+use Lijiuhui\WebOffice\Exceptions\WebOfficeException;
+use Lijiuhui\WebOffice\File;
+use Lijiuhui\WebOffice\Files;
+use Lijiuhui\WebOffice\User;
+use Lijiuhui\WebOffice\Users;
+use Lijiuhui\WebOffice\WebOffice;
+use Lijiuhui\WebOffice\WebOfficeInterface;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 

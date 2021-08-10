@@ -1,6 +1,6 @@
 <?php
 
-namespace Eiixy\WebOffice\Models;
+namespace Lijiuhui\WebOffice\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

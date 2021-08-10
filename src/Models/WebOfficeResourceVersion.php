@@ -1,6 +1,6 @@
 <?php
 
-namespace Eiixy\WebOffice\Models;
+namespace Lijiuhui\WebOffice\Models;
 
 use App\Models\Traits\HasChildren;
 use App\Models\Traits\HasResources;

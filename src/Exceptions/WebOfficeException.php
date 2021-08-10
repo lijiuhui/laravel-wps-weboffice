@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Eiixy\WebOffice\Exceptions;
+namespace Lijiuhui\WebOffice\Exceptions;
 
 
 use Throwable;

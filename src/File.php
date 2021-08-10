@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Eiixy\WebOffice;
+namespace Lijiuhui\WebOffice;
 
 
 class File

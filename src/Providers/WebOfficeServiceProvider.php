@@ -16,9 +16,6 @@ class WebOfficeServiceProvider extends ServiceProvider
             $config_path => base_path('config/weboffice.php'),
         ], 'weboffice');
 
-        // 加载数据库迁移文件
-        $this->loadMigrationsFrom(__DIR__ . '/../../database/migrations');
-
         // 加载路由
         $this->loadRoutesFrom(__DIR__ . '/../../routes/wps.php');
     }
@@ -32,15 +29,6 @@ class WebOfficeServiceProvider extends ServiceProvider
                 throw new \Exception('weboffice.handler 配置必须继承 WebOfficeInterface 接口');
             }
             return $class;
-        });
-    }
-
-    protected function loadMigrationsFrom($paths)
-    {
-        $this->app->afterResolving('migrator', function ($migrator) use ($paths) {
-            foreach ((array)$paths as $path) {
-                $migrator->path($path);
-            }
         });
     }
 }

@@ -36,7 +36,7 @@ class WebOfficeController
         $permission = $request->query('_w_permission', 'read');
         $user_acl = WebOffice::decode($request->query('_w_user_acl'));
         $watermark = WebOffice::decode($request->query('_w_watermark'));
-        $file_id = $request->query('_w_file_id');
+        $file_id = $request->query('_w_fileid');
 
         if ($file_id != $this->file_id) {
             throw new WebOfficeException('file_id 校验异常');

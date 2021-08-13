@@ -60,7 +60,7 @@ abstract class WebOfficeHandlerService implements WebOfficeInterface
         }
         $content = implode('', $_params) . '_w_secretkey=' . $this->appkey;
         $_signature = base64_encode(hash_hmac('sha1', $content, $this->appkey, true));
-        $signature = str_replace(' ', '+', $signature);
+        $signature = str_replace(' ', '+', urldecode($signature));
 
         if ($signature != $_signature) {
             throw new WebOfficeException('签名验证失败', -1);
@@ -80,6 +80,7 @@ abstract class WebOfficeHandlerService implements WebOfficeInterface
         $params['_w_authid'] = $auth_id;
         $params['_w_fileid'] = $file->uuid;
         $params['_w_permission'] = $permission;
+        $params['_w_tokentype'] = 1;
 
         if ($file->user_acl) {
             $params['_w_useracl'] = WebOffice::encode($file->user_acl);

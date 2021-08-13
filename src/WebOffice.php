@@ -11,9 +11,9 @@ class WebOffice
      * @param string $string
      * @return mixed
      */
-    public static function decode(string $string)
+    public static function decode($string)
     {
-        return json_decode(base64_decode($string), true);
+        return $string ? json_decode(base64_decode($string), true) : [];
     }
 
     /**

@@ -50,11 +50,9 @@ class WebOfficeController
     // 获取用户信息
     public function userInfo(Request $request)
     {
-        $ids = $request->input('ids', []);
+        $ids = $request->get('ids', []);
         $users = $this->webOffice->UserInfo($ids);
-        return response()->json([
-            'users' => $users
-        ]);
+        return response()->json($users);
     }
 
     // 通知此文件目前有哪些人正在协作
